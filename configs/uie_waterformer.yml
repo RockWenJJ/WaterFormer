@@ -24,7 +24,7 @@ datasets:
     batch_size_per_gpu: 8
 
     ### -------------Progressive training--------------------------
-    mini_batch_sizes: [8,5,4,2,1,1]             # Batch size per gpu   
+    mini_batch_sizes: [8,4,3,2,1,1]             # Batch size per gpu   
     iters: [92000,64000,48000,36000,36000,24000]
     gt_size: 384   # Max patch size for progressive training
     gt_sizes: [128,160,192,256,320,384]  # Patch sizes for progressive training.
@@ -94,11 +94,11 @@ train:
 # validation settings
 val:
   window_size: 8
-  val_freq: !!float 4e3
+  val_freq: !!float 2e3
   save_img: false
   rgb2bgr: true
   use_image: true
-  max_minibatch: 8
+  max_minibatch: 1
 
   metrics:
     psnr: # metric name, can be arbitrary
@@ -109,7 +109,7 @@ val:
 # logging settings
 logger:
   print_freq: 100
-  save_checkpoint_freq: !!float 4e3
+  save_checkpoint_freq: !!float 1e4
   use_tb_logger: true
   wandb:
     project: ~

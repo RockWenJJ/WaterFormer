@@ -179,10 +179,10 @@ class GLTransBlock(nn.Module):
         x_norm = self.norm1(x)
 
         y1 = self.glob_attn(x_norm)
-        y1 = shortcut + x_norm
+        y1 = shortcut + y1
         
         y2 = self.local_attn(x_norm)
-        y2 = shortcut + x_norm
+        y2 = shortcut + y2
 
         alpha = F.sigmoid(self.avg_pool(y1))
         

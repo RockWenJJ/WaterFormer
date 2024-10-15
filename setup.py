@@ -107,7 +107,7 @@ if __name__ == '__main__':
         keywords='underwater image enhancement',
         packages=find_packages(
             exclude=('options', 'datasets', 'experiments', 'results',
-                     'tb_logger', 'wandb')),
+                     'tb_logger', 'wandb', 'work_dirs')),
         classifiers=[
             'Development Status :: 4 - Beta',
             'License :: OSI Approved :: Apache Software License',
