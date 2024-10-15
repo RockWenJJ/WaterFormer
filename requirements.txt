@@ -1,0 +1,12 @@
+torch==1.13.0
+torchvision==0.14.0
+numpy==1.26.4
+opencv-python==4.10.0
+lmdb==1.5.1
+tqdm
+einops
+pytorch_msssim
+scikit-image
+pyyaml
+tensorboard
+natsorted
