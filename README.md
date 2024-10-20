@@ -38,9 +38,10 @@ Prepare the training and testing dataset, modify the dataset path in the config 
 python waterformer/train.py --opt ./configs/uie_waterformer.yml
 ```
 
+
 ## Testing
 
-Download the pretrained checkpoint for real-world underwater image enhancement in [[GoogleDrive]](https://drive.google.com/file/d/19B6UWh0pT_TSsb5XQzBwntnQiBby6Rqd/view?usp=drive_link) [[BaiduYun]](https://pan.baidu.com/s/17pnaoTkQz3vsk_x7tyWy8Q) (Code:rq2r). After that, put the pretrained checkpoint in `checkpoints`.
+Download the pretrained checkpoint for real-world underwater image enhancement in [[GoogleDrive]](https://drive.google.com/file/d/1024TfktAwy5QDU_VlaMDLAPsoiCXfm7M/view?usp=drive_link) [[BaiduYun]](https://pan.baidu.com/s/1FExPaZ9hjOngNacNxl911w) (Code:73nw). After that, put the pretrained checkpoint in `checkpoints`.
 
 ```shell
 python waterformer/test.py --opt ./configs/uie_waterformer.yml --checkpoint ./checkpoints/weights.pth --input-dir ./datasets/val/input --output-dir ./results
